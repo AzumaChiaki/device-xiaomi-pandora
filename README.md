@@ -117,7 +117,7 @@ mka recoveryimage
 
 - `https://github.com/ymdzq/OrangeFox-Action-Builder`
 修改版：
-
+-<https://github.com/AzumaChiaki/device-xiaomi-pandora>
 操作流程：
 
 1. Fork 上面的 Action Builder 仓库到你自己的账号
