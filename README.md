@@ -1,6 +1,5 @@
 # OFRP Device Tree for Xiaomi 17 Pro (pandora)
-
-这个仓库基于 `plg/images` 固件包重建，目标是为编译适配 `pandora` 的 recovery 做准备。
+参考：https://github.com/0x7B00/OFRP?tab=readme-ov-file
 
 ## 当前设备信息（来自刷机包）
 - Device: `pandora`
@@ -10,7 +9,7 @@
 - Security patch: `2025-10-01`
 
 ## 已完成的重建内容
-- 设备树从 `elish/kona` 迁移到 `pandora/canoe`
+- 该设备树在 `pandora/canoe` 已经成功开机并修复触控驱动和挂载外部otg
 - `BoardConfig.mk` 切换到 boot header v4，并同步分区大小
 - 预编译内核与设备树已替换：
   - `prebuilt/Image` <- `boot.img` kernel
@@ -101,8 +100,9 @@ mka recoveryimage
 ## GitHub Action（云编译）
 可继续使用项目根目录下的 OrangeFox Action Builder，按下面参数填写：
 
-入口仓库：
+参考：
 - `https://github.com/ymdzq/OrangeFox-Action-Builder`
+修改版：
 
 操作流程：
 1. Fork 上面的 Action Builder 仓库到你自己的账号
