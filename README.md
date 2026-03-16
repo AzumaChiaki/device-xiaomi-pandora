@@ -126,7 +126,7 @@ mka recoveryimage
 4. 点击 `Run workflow`，按下方参数填写
 
 - OrangeFox Branch: `14.1`
-- Custom Recovery Tree: `https://github.com/AzumaChiaki/OFRP`
+- Custom Recovery Tree: `https://github.com/AzumaChiaki/device-xiaomi-pandora`
 - Custom Recovery Tree Branch: `fox_12.1-a14`
 - Specify your device path: `device/xiaomi/pandora`
 - Specify your Device Codename: `pandora`
