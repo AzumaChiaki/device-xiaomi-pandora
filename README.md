@@ -1,5 +1,5 @@
 # OFRP Device Tree for Xiaomi 17 Pro (pandora)
-参考：https://github.com/0x7B00/OFRP?tab=readme-ov-file
+参考：https://github.com/0x7B00/OFRP
 
 ## 当前设备信息（来自刷机包）
 - Device: `pandora`
