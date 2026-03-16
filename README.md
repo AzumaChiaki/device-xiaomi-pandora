@@ -1,14 +1,22 @@
 # OFRP Device Tree for Xiaomi 17 Pro (pandora)
-参考：https://github.com/0x7B00/OFRP
+
+参考：<https://github.com/0x7B00/OFRP>
 
 ## 当前设备信息（来自刷机包）
+
 - Device: `pandora`
 - Platform: `canoe`
 - Android: `16` (`sdk 36`)
 - Build: `OS3.0.30.0.WBLCNXM`
 - Security patch: `2025-10-01`
 
+## 已知问题
+
+- 无法解密/挂载data分区
+- 部分刷机包无法正常刷入
+
 ## 已完成的重建内容
+
 - 该设备树在 `pandora/canoe` 已经成功开机并修复触控驱动和挂载外部otg
 - `BoardConfig.mk` 切换到 boot header v4，并同步分区大小
 - 预编译内核与设备树已替换：
@@ -21,6 +29,7 @@
   - `recovery/root/system/etc/ueventd.rc`
 
 ## 一键同步脚本
+
 固件更新后可以直接运行：
 
 ```bash
@@ -34,6 +43,7 @@
 ```
 
 ## 获取完整源码（OrangeFox 12.1）
+
 按照 OrangeFox 官方 `sync` 工具拉取完整源码：
 
 ```bash
@@ -51,6 +61,7 @@ cd sync
 ```
 
 ## 编译
+
 将仓库放到源码树 `device/xiaomi/pandora` 后，先做检查：
 
 ```bash
@@ -59,6 +70,7 @@ grep -n "twrp_pandora" device/xiaomi/pandora/AndroidProducts.mk
 ```
 
 应能看到：
+
 - `twrp_pandora.mk`
 - `BoardConfig.mk`
 - `prebuilt/Image`、`prebuilt/dtb`、`prebuilt/dtbo.img`
@@ -98,13 +110,16 @@ mka recoveryimage
 ```
 
 ## GitHub Action（云编译）
+
 可继续使用项目根目录下的 OrangeFox Action Builder，按下面参数填写：
 
 参考：
+
 - `https://github.com/ymdzq/OrangeFox-Action-Builder`
 修改版：
 
 操作流程：
+
 1. Fork 上面的 Action Builder 仓库到你自己的账号
 2. 进入你 Fork 后仓库的 `Actions`
 3. 选择 `OrangeFox - Build`
